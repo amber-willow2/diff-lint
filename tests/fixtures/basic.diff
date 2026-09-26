@@ -1,0 +1,25 @@
+diff --git a/app.py b/app.py
+index 1111111..2222222 100644
+--- a/app.py
++++ b/app.py
+@@ -10,4 +10,9 @@ def handle_request(req):
+     if not req.user:
+         return None
++    console.log("got here")
++<<<<<<< HEAD
+     return req.user.name
++=======
++    return None
++>>>>>>> feature
+
+diff --git a/style.css b/style.css
+new file mode 100644
+index 0000000..3333333
+--- /dev/null
++++ b/style.css
+@@ -0,0 +1,5 @@
++.header {
++    color: red;
++	    padding: 0;
++    /* this comment is deliberately long enough that the added line pushes well past the project's one hundred twenty character line length limit used for testing */
++}

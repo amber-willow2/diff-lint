@@ -83,3 +83,13 @@ pip install -e .
 
 which gives you a `difflint` command, or just run the module in place
 with `python -m difflint.cli`.
+
+## Testing
+
+```
+python -m unittest discover
+```
+
+Tests live under `tests/`, including a couple of sample diffs under
+`tests/fixtures/` used to check the parser and checks together end to
+end.
